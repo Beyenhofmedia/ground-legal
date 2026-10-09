@@ -50,7 +50,10 @@ What is **not** sent, ever:
 - Your check-ins
 - Anything identifying you or your device
 
-The conversation is not saved. Closing Ground forgets it.
+Ground does not save the conversation; closing it forgets it. Anthropic
+receives the message in order to answer it and handles it under its own
+terms, which may retain it for a limited time for safety purposes. Ground
+cannot delete a copy Anthropic holds.
 
 Our relay records only whether a request succeeded, how long it took, and the
 name of any error. **It never records the content of a message.**
@@ -126,7 +129,7 @@ One thing to declare, and nothing else:
 
 - **Other User Content** — *Used for App Functionality*, **not** linked to
   the user's identity, **not** used for tracking. This is the Companion
-  message text, which is sent to be answered and not retained.
+  message text, which is sent to be answered and is not retained by us.
 
 Declare no contact info, no usage data, no diagnostics, no advertising
 identifiers, no location, and no tracking of any kind.
