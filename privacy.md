@@ -48,7 +48,11 @@ What is **not** sent, ever:
 - Your garden
 - Your name
 - Your check-ins
-- Anything identifying you or your device
+- Anything identifying you or your device. One random token, made the
+  first time you use the Companion and kept only on your phone, goes with
+  each message so our relay can limit how many messages a day it answers.
+  It names this install of the app and nothing about you; deleting
+  everything in Settings, or deleting the app, discards it.
 
 Ground does not save the conversation; closing it forgets it. Anthropic
 receives the message in order to answer it and handles it under its own
