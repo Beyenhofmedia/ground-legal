@@ -2,11 +2,24 @@
 title: Privacy policy
 layout: default
 ---
-
 # Privacy policy — Ground
 
-**Last updated: 9 October 2026**
+**Last updated: 11 October 2026**
 
+> **TODO(dev): before submitting to the App Store**
+>
+> 1. Fill in the contact address at the bottom. Apple requires a working one.
+> 2. Publish this at a public URL (GitHub Pages is fine), put that URL in
+>    `src/content/links.ts` and in App Store Connect. An app cannot be
+>    reviewed without it.
+> 3. Fill in the Privacy Nutrition Label in App Store Connect to match this
+>    document. The short version is below under "What Apple's label should
+>    say".
+> 4. If this ever gains an account, a backup, an analytics provider, a crash
+>    reporter or an advertisement, **this document is wrong** and has to be
+>    rewritten before that ships. The app has an analytics seam with nothing
+>    behind it (`src/data/analytics.ts`); the day a provider is installed,
+>    the "No analytics" line below becomes false and must change first.
 
 Ground is a prayer app. What people write in it is about the hardest things
 in their lives, so the way it handles that is the shortest it can be: almost
@@ -30,8 +43,10 @@ All of it, unless it is in the next section.
 - Your settings, including the times you asked to be reminded
 
 These are stored in a database inside the app on your device. They are not
-backed up to us, not synced, and not readable by us. If you delete the app,
-they are gone. There is no copy anywhere else.
+backed up to us, not synced, and not readable by us. If your phone backs
+itself up to iCloud or to a computer, that database goes with the backup,
+under Apple's encryption and your Apple ID; we have no part in it and no
+access to it. If you delete the app, they are gone from the phone.
 
 ## What leaves your phone
 
@@ -52,7 +67,10 @@ What is **not** sent, ever:
   first time you use the Companion and kept only on your phone, goes with
   each message so our relay can limit how many messages a day it answers.
   It names this install of the app and nothing about you; deleting
-  everything in Settings, or deleting the app, discards it.
+  everything in Settings, or deleting the app, discards it. To enforce the
+  daily limit, our relay keeps a count of messages per token and per
+  network address (stored as a one-way hash, never the address itself) for
+  two days, and nothing else.
 
 Ground does not save the conversation; closing it forgets it. Anthropic
 receives the message in order to answer it and handles it under its own
@@ -70,6 +88,17 @@ your files — and never to us. A seed link carries a Bible reference, the
 name you typed, and your own words; it is sent by you, through an app you
 choose, to a person you choose.
 
+## Subscriptions
+
+[REPLACE WITH ATTORNEY-REVIEWED TEXT. Facts for the drafter: if you
+subscribe, the purchase is made with Apple through your Apple ID. The app
+uses RevenueCat to confirm the purchase and keep the subscription in step
+across your devices; to do that, RevenueCat receives the App Store receipt,
+an anonymous identifier for this install, and basic device information, and
+handles them under its own privacy policy (link). Neither we nor RevenueCat
+receive your name, email or payment details from Apple. No purchase data is
+used for advertising or shared with anyone else.]
+
 ## What we do not do
 
 - **No account and no password.** There is nothing to remember and nothing
@@ -78,13 +107,16 @@ choose, to a person you choose.
 - **No analytics.** No event tracking, no usage statistics, no session
   recording.
 - **No advertising**, and no advertising identifiers.
-- **No third-party SDKs that collect data.** The app contains no analytics,
-  attribution, crash-reporting or advertising libraries of any kind.
+- **No third-party SDKs that collect data for their own purposes.** The app
+  contains no analytics, attribution, crash-reporting or advertising
+  libraries. The subscription library is described under Subscriptions.
 - **No selling or sharing of data.** There is nothing to sell.
 - **No location, contacts, photos, microphone or health data.** The app does
   not ask for them and cannot read them.
-- **Nothing is locked.** When the free trial ends, the app keeps working.
-  Your prayers are never held behind a payment.
+- **Your prayers are never held behind a payment.** When the free trial
+  ends the app needs a subscription to open, but from that screen you can
+  save every prayer to a file or delete them all, without paying, and the
+  crisis line stays open.
 
 ## Notifications
 
@@ -129,15 +161,21 @@ before it takes effect, not published quietly here.
 
 ## What Apple's label should say
 
-One thing to declare, and nothing else:
+Three things to declare, all *Used for App Functionality*, **not** linked to
+the user's identity, **not** used for tracking:
 
-- **Other User Content** — *Used for App Functionality*, **not** linked to
-  the user's identity, **not** used for tracking. This is the Companion
-  message text, which is sent to be answered and is not retained by us.
+- **Other User Content** — the Companion message text, sent to be answered
+  and not retained by us.
+- **Identifiers → User ID** — the random per-install token sent with each
+  Companion message so the relay can count messages.
+- **Purchases → Purchase History** — the App Store receipt that RevenueCat
+  checks to confirm a subscription. Declare this only once subscriptions
+  are switched on.
 
 Declare no contact info, no usage data, no diagnostics, no advertising
 identifiers, no location, and no tracking of any kind.
 
 ## Contact
 
-[Contact address to be added before release.]
+[REPLACE WITH ATTORNEY-REVIEWED TEXT: a monitored contact address for
+privacy questions and requests.]

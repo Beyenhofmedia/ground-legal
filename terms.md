@@ -81,12 +81,19 @@ a picture of your season, or your journal as a file. You choose what to send,
 to whom, and through which app. Do not send a seed to somebody who has not
 asked for one, and do not put another person's private words into a seed.
 
+[REPLACE WITH ATTORNEY-REVIEWED TEXT. Facts for the drafter: a seed link
+carries only what the sender chose to put in it; Ground stores no copy of
+it and runs no server that hosts it; the sender is responsible for its
+contents; a person who receives a seed they object to can report it from the
+screen that opens it, to the contact address below.]
+
 ## The Companion
 
 The Companion is an **AI**. It is not a person, a pastor or a counsellor, and
 it can be wrong. What you send it is passed to our AI provider to be
-answered and is not kept. Do not rely on it for medical, legal, financial or
-emergency help. If an answer is wrong or harmful, use *Report this answer*
+answered. We do not keep it; the provider's handling of it, including any
+limited retention for safety purposes, is governed by the provider's own
+terms. Do not rely on it for medical, legal, financial or emergency help. If an answer is wrong or harmful, use *Report this answer*
 under it to tell us.
 
 Scripture shown anywhere in Ground comes from the bundled Bible text and is
@@ -120,8 +127,8 @@ effect.
 
 ## Governing law
 
-TODO(dev): the jurisdiction goes here.
+[REPLACE WITH ATTORNEY-REVIEWED TEXT: governing law and venue.]
 
 ## Contact
 
-TODO(dev): a real, monitored address goes here before submission.
+[REPLACE WITH ATTORNEY-REVIEWED TEXT: a monitored contact address.]
