@@ -2,11 +2,22 @@
 title: Terms of Use
 layout: default
 ---
-
 # Terms of Use — Ground
 
-**Last updated: 9 October 2026**
+**Last updated: 11 October 2026**
 
+> **TODO(dev): before submitting to the App Store**
+>
+> 1. Fill in the company or individual name and the contact address below.
+> 2. Fill in the governing jurisdiction.
+> 3. Publish this at a public URL and put that URL in `src/content/links.ts`.
+> 4. Apple requires a Terms of Use (EULA) link on any screen selling a
+>    subscription. If you would rather not maintain your own, you may link
+>    Apple's standard EULA instead:
+>    https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+>    Using your own is better if you ever want terms Apple's does not cover.
+> 5. Have somebody qualified read this. It is written to be honest and
+>    readable, not to be legal advice.
 
 ## What Ground is
 
@@ -28,11 +39,13 @@ You must be 13 or older to use Ground.
 
 ## Subscriptions
 
-Ground is free for the first ten days. After that, Ground asks for a
-subscription, offered as a yearly, a monthly or a weekly plan at the prices
-shown in the app. **Nothing is taken away if you decide not to subscribe**;
-the app keeps working, and the subscription is simply what keeps Ground
-going.
+Ground is free for the first fourteen days. After that, Ground needs a
+subscription to open, offered as a yearly, a monthly or a weekly plan at the
+prices shown in the app. **Nothing you wrote is taken away if you decide not
+to subscribe.** Your prayers stay on your device, and from the plans page
+you can save them to a file or delete them at any time without paying. The
+crisis line also stays open. Subscribe or restore a subscription later and
+everything is exactly as you left it.
 
 - **Payment is charged to your Apple ID** at confirmation of purchase, or at
   the end of the free trial if you started one.
@@ -107,8 +120,8 @@ effect.
 
 ## Governing law
 
-[Jurisdiction to be added before release.]
+TODO(dev): the jurisdiction goes here.
 
 ## Contact
 
-[Contact address to be added before release.]
+TODO(dev): a real, monitored address goes here before submission.
